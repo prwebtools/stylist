@@ -1,15 +1,15 @@
 # Stylist
 ## About
 
-[![Build Status](https://img.shields.io/travis/floatingpointsoftware/stylist.svg?branch=master)](https://travis-ci.org/floatingpointsoftware/stylist)
+[![Build Status](https://img.shields.io/travis/bobimicroweber/stylist.svg?branch=master)](https://travis-ci.org/bobimicroweber/stylist)
 
-Stylist is a Laravel 5.5+ compatible package for theming your Laravel applications.
+Stylist is a Laravel 5.8+ compatible package for theming your Laravel applications.
 
 ## Installation
 
 Via the usual composer command:
 
-    composer require floatingpoint/stylist
+    composer require bobimicroweber/stylist
 
 Then, make sure the Stylist service provider is made available to your application by updating your config/app.php:
 
