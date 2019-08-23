@@ -1,6 +1,6 @@
 {
-  "name": "floatingpoint/stylist",
-  "description": "Laravel 5 theming package.",
+  "name": "bobimicroweber/stylist",
+  "description": "Laravel 5.8 theming package.",
   "authors": [
     {
       "name": "Kirk Bushell",
@@ -9,6 +9,10 @@
     {
       "name": "Mike Dugan",
       "email": "mike@mjdugan.com"
+    },
+    {
+      "name": "Bozhidar Slaveykov",
+      "email": "bobi@microweber.com"
     }
   ],
   "require": {
