@@ -1,15 +1,15 @@
 # Stylist
 ## About
 
-[![Build Status](https://img.shields.io/travis/bobimicroweber/stylist.svg?branch=master)](https://travis-ci.org/bobimicroweber/stylist)
+[![Build Status](https://img.shields.io/travis/prwebtools/stylist.svg?branch=master)](https://travis-ci.org/prwebtools/stylist)
 
-Stylist is a Laravel 5.8+ compatible package for theming your Laravel applications.
+Stylist is a Laravel 5.5+ and 6+ compatible package for theming your Laravel applications.
 
 ## Installation
 
 Via the usual composer command:
 
-    composer require bobimicroweber/stylist
+    composer require prwebtools/stylist
 
 Then, make sure the Stylist service provider is made available to your application by updating your config/app.php:
 
@@ -72,7 +72,7 @@ need to ensure that before you publish, your themes are available and registered
 
     public function register()
     {
-        Stylist::registerPaths(Stylist::discover('/path/to/my/themes'));    
+        Stylist::registerPaths(Stylist::discover('/path/to/my/themes'));
     }
 
 Then simply run the publish command:

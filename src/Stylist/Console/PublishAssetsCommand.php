@@ -1,10 +1,10 @@
 <?php
+
 namespace FloatingPoint\Stylist\Console;
 
-use FloatingPoint\Stylist\Theme\Theme;
 use Stylist;
 use Illuminate\Console\Command;
-use Illuminate\Contracts\Container\Container;
+use FloatingPoint\Stylist\Theme\Theme;
 use Symfony\Component\Console\Input\InputArgument;
 
 class PublishAssetsCommand extends Command
@@ -48,7 +48,7 @@ class PublishAssetsCommand extends Command
         foreach ($themes as $theme) {
             $path = $theme->getPath();
 
-            if ($this->laravel['files']->exists($path.'assets/')) {
+            if ($this->laravel['files']->exists($path . 'assets/')) {
                 $this->laravel['stylist']->registerPath($path);
             }
         }
@@ -82,9 +82,9 @@ class PublishAssetsCommand extends Command
     {
         $themePath = public_path('themes/' . $theme->getAssetPath());
 
-        $this->laravel['files']->copyDirectory($theme->getPath().'/assets/', $themePath);
+        $this->laravel['files']->copyDirectory($theme->getPath() . '/assets/', $themePath);
 
-        $this->info($theme->getName().' assets published.');
+        $this->info($theme->getName() . ' assets published.');
     }
 
     /**
